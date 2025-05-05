@@ -23,7 +23,9 @@ function ChatWindow() {
       const timestamp = date.toLocaleString("en-IN", {
         hour: "numeric",
         minute: "numeric",
-        hour12: true  
+        hour12: true,
+        day: "2-digit",
+        month: "short"
       })
 
       if(msgList.length === 0){
